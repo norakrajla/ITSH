@@ -1,0 +1,123 @@
+    body { 
+                font-family: 'Open Sans', sans-serif;
+                font-size: 11pt;
+				margin: 0;
+                }
+
+            #mainContainer{
+                width: 88%;
+                margin: calc(8vw + 75px) auto;
+            }
+
+            .lenyiloElem h2 { 
+                margin: 0; 
+                font-size: 13pt; 
+                padding: 8px 16px; 
+                color: #fff;
+				cursor: pointer;
+                background-color: #d61838;
+				user-select: none;
+                }
+            .lenyiloElem div { 
+                margin: 0; 
+                background-color: #eef; 
+                border-bottom: 1px solid #66d;  
+                height: 380px;
+                opacity: 1;
+                transition: height 0.75s ease-in-out, opacity  1.2s ease-in-out;
+                }
+
+            .lenyiloElem.cast.hide h2 { color: #eee; background-color: #47144d; }
+            .lenyiloElem.crew.hide h2 { color: #eee; background-color: #ff6600; }
+
+            .lenyiloElem.hide div { 
+                height: 0;
+				min-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: height 0.75s ease-in-out, opacity  1.2s ease-in-out;
+                }
+
+             img{
+				 user-select: none;
+                 height: 240px;
+                 float: left;
+                 padding-top: 15px;
+             }
+              .reszletek{
+                 float: left;
+                 width: 14%;
+                 position: relative;
+                 bottom: -215px;
+             }
+             .reszletekGomb{
+                background: #d61838;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px 16px;
+                cursor: pointer;
+				user-select: none;
+             }
+             .reszletekGomb:hover{
+                background: #b1132e;
+             }
+			 
+			 #txtSearch{
+				 outline:none;
+				 display: block;
+				 float: right;
+				width: 180px;
+				 margin-right: 10px;
+                background: #eeeeee;
+                color: black;
+                font-weight: bold;
+                padding: 11px 16px;
+                cursor: pointer;
+				user-select: none;
+				border: 2px solid #00a000;
+			 }
+			 #txtSearch:focus{
+                border-color: #008b00;
+             }
+             .keresesGomb{
+				 display: block;
+				 float: right;
+				 display: inline-block;
+				 margin-right: 6%;
+				 min-width: 20px;
+                background: #00a000;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px 16px;
+                cursor: pointer;
+				user-select: none;
+             }
+             .keresesGomb:hover{
+                background: #008b00;
+             }
+             table{
+                 float: left;
+                 width: 60%;
+                 overflow: hidden;
+                 padding: 15px 20px 15px 20px;
+             }
+             td:first-child{
+                 font-weight: bold;
+             }
+             td{
+                 padding: 4px;
+                 vertical-align: top;
+             }
+             .bovebb{
+                 overflow: hidden;  /*auto --csúszka*/
+             }
+             header{
+                width: 100%;
+                height: calc(20vw + 15px);
+             }
+             header img{
+                  width: 100%;
+                  height: auto;
+                  /*margin: -30px 0 0 -8px;*/ 
+             }
+            

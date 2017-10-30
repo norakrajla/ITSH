@@ -1,0 +1,58 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}  
+.form-control {
+    margin: 10px 0;
+}
+table{
+    margin: 0 auto;
+}
+.elrejt{
+    display: none;
+}
+
+.szerint li{
+    display: inline-block;
+    width: 24%;
+    cursor: pointer;
+    font-size: 14pt;
+    font-weight: bolder;
+    background: #9DE0AD;
+    text-align: center;
+    padding: 16px;
+}
+.szerint li:nth-child(2), .szerint li:nth-child(3), .szerint li:nth-child(4){
+    padding-top: 87px ;
+}
+.rendez li{
+    display: inline-block;
+    width: 32.1%;
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: bolder;
+    background: #A7DBD8;
+    text-align: center;
+    padding: 12px;
+}
+.rendez li label{
+    cursor: pointer;
+}
+.csekkbox{
+    font-size: 10pt;
+    padding:5px 0 2px 0;
+}
+h1{
+    text-align: center;
+    padding: 20px 0;
+}
+nav{
+    background:orange;
+    padding: 20px 0;
+    font-family: 'Pacifico', cursive;
+
+}
+nav h1{
+    font-size: 40pt;
+    color: #fefefe;
+}

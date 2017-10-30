@@ -1,0 +1,13 @@
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\PhotoExamTest\PhotosExamExercise\bin\Debug\PhotosExamExercise.exe.config
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\PhotoExamTest\PhotosExamExercise\bin\Debug\PhotosExamExercise.exe
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\PhotoExamTest\PhotosExamExercise\bin\Debug\PhotosExamExercise.pdb
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.csprojResolveAssemblyReference.cache
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.exe
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.pdb
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\bin\Debug\PhotosExamExercise.exe.config
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\bin\Debug\PhotosExamExercise.exe
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\bin\Debug\PhotosExamExercise.pdb
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.csprojResolveAssemblyReference.cache
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.csproj.CoreCompileInputs.cache
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.exe
+C:\Users\Nora\Desktop\DOT NET\PhotoExamTest\PhotosExamExercise\obj\Debug\PhotosExamExercise.pdb

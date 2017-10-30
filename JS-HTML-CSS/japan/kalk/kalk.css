@@ -1,0 +1,128 @@
+body{
+  background-color: #000000;
+  text-align: center;
+}
+
+
+h2{
+
+	text-align: center;
+	font-size: 35px;
+	color: #ee0000;
+}
+
+p{
+	font-size: 20px; 
+	color: #eee;
+}
+
+button {
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+}
+select{
+	font-size: 15px;
+
+}
+
+#form{
+	color: #eee;
+	font-size: 20px;
+}
+#trafic{
+	color: #eee;
+	font-size: 20px;
+}
+
+#form2{
+	color: #eee;
+	font-size: 20px;
+
+}
+
+#form3{
+	color: #eee;
+	font-size: 20px;
+}
+#food1{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+
+}
+#food2{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+
+}
+#food3{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+
+}
+
+#selair{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}
+
+#selbed{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}
+
+#selhotel{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}
+#night{
+	
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}
+#sum{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}
+#trafic2{
+	background-color: #000000;
+	color: #eee;
+	font-size: 15px;
+	border-color:#eee;
+	text-align: center;
+	margin:15px 0px 15px 0px;
+}

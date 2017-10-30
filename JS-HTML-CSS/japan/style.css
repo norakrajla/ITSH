@@ -1,0 +1,60 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.menu ul{
+    display: inline-block;
+}
+.menu li{
+    display: inline-block;
+    padding: 12px 40px;
+    font-size: 20px;
+    color: #eee;
+    font-weight: 500;
+        }
+nav{
+    background: #000;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    margin-left:-8px;
+}
+li.nav-active{
+    color: red;
+}
+.japanicon{
+    width: 86px;
+    float:left;
+    padding-left: 30px;
+}
+ .nav-title{
+        font-size:34px;
+        font-weight: 600;
+        display: inline-block;
+        float: left;
+        padding-left: 60px;
+        padding-top: 18px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section{
+   text-align: justify;
+   padding: 20px;
+   float:right; 
+    width:700px; 
+    margin-top: -690px; 
+    margin-right: 130px;
+}
+
+.choose {
+      background: #eee;
+      width: 88%;
+      padding: 16px;
+      margin: 0 auto ;
+}
+.pics img{
+    padding: 4px;
+}

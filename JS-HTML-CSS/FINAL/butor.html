@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+   <title>Lakberendező</title>
+   <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/stilus.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="">
+  
+</head>
+<nav>
+    <h1>Lakberendezők oldala</h1>
+</nav>
+<body>
+<div class="container">
+
+<h1>SZŰRÉS</h1>
+<ul class="szerint">
+    <li id="arSzerint" >Ár szerint<br>
+    <input type="number" value="0" min="0" max="100" id="arMezo1" class="form-control"> <input type="number" value="100" min="0" max="100" id="arMezo2" class="form-control">
+    <button type="button" id="arButton" onclick="szuro();" class="btn btn-success">Mutasd</button>
+    <button type="button" id="torolButton" onclick="torol();" class="btn btn-danger">Töröl</button>
+    </li>
+    <li id="tipusSzerint" onclick="szuro();">Típus szerint<br>
+        <div id="tipusCheckboxokMegjelen" class="csekkbox">
+            <input onclick="szuro();" type="checkbox" name="tipus" id="agy" value="Ágyak"><label for="agy">Ágyak</label> 
+            <input onclick="szuro();" type="checkbox" name="tipus" id="szek" value="Székek"><label for="szek">Székek</label><br> 
+            <input onclick="szuro();" type="checkbox" name="tipus" id="szekreny" value="Szekrények"><label for="szekreny">Szekrények</label>
+            <input onclick="szuro();" type="checkbox" name="tipus" id="asztal" value="Asztalok"><label for="asztal">Asztalok</label> 
+        </div>
+    </li>
+    <li id="anyagSzerint" onclick="szuro();">Anyag szerint<br>
+        <div id="anyagCheckboxokMegjelen" class="csekkbox">
+            <input onclick="szuro();" type="checkbox" name="tipus" id="fa" value="Fa"><label for="fa">Fa</label> 
+            <input onclick="szuro();" type="checkbox" name="tipus" id="textilia" value="Textília"><label for="textilia">Textília</label><br>
+            <input onclick="szuro();" type="checkbox" name="tipus" id="vas" value="Vas"><label for="vas">Vas</label>
+            <input onclick="szuro();" type="checkbox" name="tipus" id="muanyag" value="Műanyag"><label for="muanyag">Műanyag</label> 
+        </div></li>
+    <li id="szinSzerint" onclick="szuro();">Szín szerint<br>
+        <div id="szinCheckboxokMegjelen" class="csekkbox">
+            <input onclick="szuro();" type="checkbox" name="tipus" id="feher" value="Fehér"><label for="feher">Fehér</label> 
+            <input onclick="szuro();" type="checkbox" name="tipus" id="fekete" value="Fekete"><label for="fekete">Fekete</label><br> 
+            <input onclick="szuro();" type="checkbox" name="tipus" id="termeszetes" value="Természetes"><label for="termeszetes">Természetes</label>
+        </div></li>
+</ul>
+
+<ul class="rendez">
+    <li onclick="szuro()"><label><input type="radio" id="legolcsobbR" value="legolcsobb" name="radio"> Legolcsóbb</label></li>
+    <li onclick="szuro()"><label><input type="radio" id="legdragabbR" value="legdragabb" name="radio"> Legdrágább</label></li>
+    <li onclick="szuro()"><label><input type="radio" id="legnepszerubbR" value="legnepszerubb" name="radio"> Legnépszerűbb</label></li>
+    
+</ul>
+
+  
+    <table id="osszesMegjelen"></table>
+    <table id="rendezArLegolcsobb"></table>
+    <table id="keressArraTable" class="table table-striped tablazatom"></table>
+</div>
+
+
+ <script src="scripts/butorData.js"></script>
+ <script src="scripts/osszes.js"></script>
+ <script src="scripts/oszetettKereso.js"></script>
+</body>
+
+</HTML>

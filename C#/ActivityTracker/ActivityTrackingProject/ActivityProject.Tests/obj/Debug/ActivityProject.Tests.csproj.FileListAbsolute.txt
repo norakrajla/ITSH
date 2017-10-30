@@ -1,0 +1,23 @@
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Tests.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Tests.pdb
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Exercises.exe
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Exercises.pdb
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Exercises.exe.config
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.pdb
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Tests.dll
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Tests.pdb
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Exercises.exe
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Exercises.pdb
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\bin\Debug\ActivityProject.Exercises.exe.config
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.dll
+C:\Users\Nora\Desktop\ITSH\C#\ActivityTracker\ActivityTrackingProject\ActivityProject.Tests\obj\Debug\ActivityProject.Tests.pdb

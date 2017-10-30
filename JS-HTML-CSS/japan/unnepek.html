@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ünnepek</title>
+    <meta charset="utf8">
+      
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        
+        td:first-child,
+        td:nth-child(2) {
+            width: 15%;
+        }
+        
+        .choose {
+            background: #eee;
+            width: 88%;
+            padding: 16px;
+            margin: 0 auto ;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+    <a href="index.html"><img class="japanicon" src="img/japanicon.png"></a>
+    <div class="nav-title">Utazás? Japán!</div>
+
+    <ul class="menu" align="right">
+        <a href="index.html"><li>Kezdőlap</li></a>
+        <a href="kalkulator.html"><li>Árkalkulátor</li></a>
+        <a href="unnepek.html"><li class="nav-active">Ünnepek</li></a>
+        <a href="anime.html"><li>Anime</li></a>
+        <a href="kapcsolat.html"><li>Kapcsolat</li></a>  
+    </ul>
+</nav>
+<br><br><br><br><br><br>
+<div class="container">
+    <div style="width: 90%;  margin: 0 auto ;">
+        <h1>Japán ünnepek</h1>
+    </div>
+    <div class="choose">
+        <h3>Válassz!</h3>
+        <b>
+    <input type="radio" name="allami" id="allami" value="allami" onclick="allamiE();">
+    <label for="allami"><font color="#ee0000">ÁLLAMI &nbsp; &nbsp; &nbsp; </font></label>
+    <input type="radio" name="allami" id="csaladi" value="csaladi" onclick="allamiE();">
+    <label for="csaladi"><font color="#fe4707">CSALÁDI-MAGÁN &nbsp; &nbsp; &nbsp; </font></label>
+    <input type="radio" name="allami" id="kultur" value="kultur" onclick="allamiE();">
+    <label for="kultur"><font color="#3f07e1">KULTURÁLIS &nbsp; &nbsp; &nbsp; </font></label>
+    <input type="radio" name="allami" id="vallasi" value="vallasi" onclick="allamiE();">
+    <label for="vallasi"><font color="#05a601">VALLÁSI &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </font></label>
+    </b>
+    <input type="radio" name="allami" id="clear" value="clear" onclick="allamiE();">
+    <label for="clear">Kiválasztás törlése</label>
+    <br><br><hr><br>
+    <b>
+    <input type="checkbox" name="helyi" id="helyi" onclick="helyiE()">
+    <label for="helyi"><span style="color: #f803aa; border: 3px solid #888; padding: 4px">HELYI ÜNNEP</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+
+    <input type="checkbox" name="golden" id="golden" onclick="goldenE()">
+    <label for="golden"><span style="color: #fea00b; border: 3px dashed #888; padding: 4px">ARANY HÉTHEZ TARTOZÓ ÜNNEP</span></label>
+    
+    </b>
+ <br>
+
+    </div>
+<br><br>
+    <table align="center">
+        <tr>
+            <th>ÜNNEP NEVE</th>
+            <th>IDŐPONT</th>
+            <th>RÖVIDEN...</th>
+        </tr>
+        <tr class="allamiUnnep">
+            <td><b>Újév</b><br>Oshogatsu</td>
+            <td>Január 1 – 3</td>
+            <td>Vallási hovatartozástól függetlenül emberek sereglenek templomokba és szentélyekbe, hogy egy szerencsés és sikeres
+                évért imádkozzanak. Ezt a látogatást nevezik hatsu-mode -nak, ami valaha arra használtak, ha valaki hajnal
+                előtt látogatott el egy shinto szentélybe és tiszteletét fejezte ki a védőistenség iránt.</td>
+        </tr>
+        <tr class="allamiUnnep">
+            <td><b>A felnőtté válás napja</b><br>Seijin no Hi</td>
+            <td>Január második hétfője</td>
+            <td>Ezen a napon a fiatalok, akik betöltik 20. életévüket, felnőtté válnak. Japánban 20 éves kortól lehet szavazni,
+                dohányozni és szeszesitalt fogyasztani.</td>
+        </tr>
+        <tr class="csaladiUnnep helyiUnnep">
+            <td><b>Szapporoi hóünnep</b><br>(Hokkaidó)</td>
+            <td>Február 5 - 11</td>
+            <td>Hó és jégszobrokat építenek, amik koncertek díszletéül is szolgálnak, illetve jutalom jár a legjobb szobor építőinek.</td>
+        </tr>
+        <tr class="allamiUnnep">
+            <td><b>Államalapítás napja</b><br>Kenkoku Kineno hi</td>
+            <td>Február 11.</td>
+            <td></td>
+        </tr>
+        <tr class="csaladiUnnep">
+            <td><b>Valentin nap</b></td>
+            <td>Február 14.</td>
+            <td>A lányok kézzel készített csokit főznek a kiszemelt fiúnak.</td>
+        </tr>
+        <tr class="csaladiUnnep helyiUnnep">
+            <td><b>Kamakura ünnep</b><br>(Yokote)</td>
+            <td>Február 15 – 16</td>
+            <td>Iglóhoz hasonló hóépítményeket készítenek (kamakura) városszerte. Minden iglóban hóból készült oltár áll a vízistenség
+                tiszteletére. Az oltárra rizstorta kerül. Este gyertyákkal világítják meg az építményt.</td>
+        </tr>
+        <tr class="csaladiUnnep">
+            <td><b>A babák ünnepe</b><br>Hina-matsuri</td>
+            <td>Március 3.</td>
+            <td>A lányok ünnepének is nevezik. A családok a lányaik boldogságáért imádkoznak. A lakásokban kiállítják a hina
+                babákat, melyek a császárt, a császárnőt, a szolgálókat és zenészeket reprezentálja antik udvari ruhákban.</td>
+        </tr>
+        <tr class="csaladiUnnep">
+            <td><b>Fehér nap</b><br>Fordított Valentin nap</td>
+            <td>Március 14.</td>
+            <td>A virág-fesztiválokat a sintó szentélyeknél tartják április folyamán. A virágokban gyönyörködésre kirándulásokat
+                és piknikeket szerveznek.</td>
+        </tr>
+        <tr class="csaladiUnnep">
+            <td><b>Cseresznyevirág nézés</b><br>Hanami</td>
+            <td>Április</td>
+            <td>A virág-fesztiválokat a sintó szentélyeknél tartják április folyamán. A virágokban gyönyörködésre kirándulásokat
+                és piknikeket szerveznek.</td>
+        </tr>
+        <tr class="vallasiUnnep">
+            <td><b>Virág fesztivál</b><br>Hana Matsuri</td>
+            <td>Április 8.</td>
+            <td>Április 8-dika Buddha születésnapja. A Buddha-templomok szertartásit igen sokan látogatják ezen a napon. A templomokban
+                a gyermek Buddhát ábrázoló kis buddha-figurákat helyeznek el, melyeket a hívők egy bizonyos fajta teával
+                szórnak le.</td>
+        </tr>
+        <tr class="allamiUnnep goldenUnnep">
+            <td><b>Hirohito császár születésnapja</b><br>Showa no Hi</td>
+            <td>Április 29.</td>
+            <td>A Showa korszak, azaz Hirohito császár uralma1926–1989 tartott.</td>
+        </tr>
+        <tr class="allamiUnnep goldenUnnep">
+            <td><b>Alkotmány ünnepe</b><br>Kenpo Kinenbi</td>
+            <td>Május 3.</td>
+            <td>1947 május 3-án lépett életbe a jelenlegi japán alkotmány.</td>
+        </tr>
+        <tr class="allamiUnnep goldenUnnep">
+            <td><b>Zöld Nap</b><br>Midori no Hi</td>
+            <td>Május 4.</td>
+            <td>Showa-korról való megemlékezésről szól, amikor a japánok keményen dolgoztak az ország újjáépítésén (a világháború
+                után).
+            </td>
+        </tr>
+        <tr class="allamiUnnep goldenUnnep">
+            <td><b>Gyereknap</b><br>Kodomo no hi</td>
+            <td>Május 5.</td>
+            <td>A családok a gyermekek egészséges fejlődését és boldogságát ünneplik. Hatalmas, ponty alakú szalagokat röptetnek
+                a kertben, a házban pedig híres harcosok és egyéb hősök bábuit helyezik el. A ponty az erőt és a sikert jelképezi.</td>
+        </tr>
+        <tr class="kulturUnnep">
+            <td><b>Csillag ünnep</b><br>Tanabata</td>
+            <td>Július 7.</td>
+            <td>Egy kínai ünnepből ered. Két isten, Orihime és Hikoboshi szeretők, ám csak egyszer találkozhatnak egy évben.
+                Az isteneket az Altair és Vega csillag reprezentálja. Az emberek a kívánságaikat és a romantikus vágyaikat
+                hosszú, keskeny színes csíkokra írják, melyeket bambusz ágakra tűznek fel.</td>
+        </tr>
+        <tr class="vallasiUnnep">
+            <td><b>Szellemfesztivál</b><br>Obon</td>
+            <td>Augusztus 13 - 15</td>
+            <td>uddhista ünnep - az elhunyt ősökre emlékeznek. A vallás szerint ekkor feltámadnak az ősök, és meglátogatják rokonaikat.
+                Az emberek lampionokat tesznek a ház elé, hogy vezessék a szellemeket, ételáldozatokat mutatnak be a házi
+                oltárok előtt vagy a templomokban, és különleges táncot (bon-odon) lejtenek. Az ünnep végén a lampionokat
+                a folyóra teszik, hogy visszavezessék a lelkeket saját világukba.</td>
+        </tr>
+        <tr class="kulturUnnep">
+            <td><b>A kultúra napja</b><br>Bunka-sai</td>
+            <td>November 3.</td>
+            <td>Az óvodától kezdve az egyetemekig minden oktatási intézményben megtartanak. A diákok bemutathatják művészi teljesítményüket.
+                Bárki megnézheti, milyen az atmoszféra és az iskolai munka. Általában a szülők is látni szeretnék, hogy gyermekeik
+                mit alkottak az év alatt. Ezért a fesztivál a legtöbb esetben nyitott mindenki számára, különösen másik intézményben
+                tanuló diákoknak.</td>
+        </tr>
+        <tr class="vallasiUnnep">
+            <td><b>Hét-öt-három</b><br>Schichi-go-san</td>
+            <td>November 15.</td>
+            <td>Ilyenkor a 3 és 7 éves lányok, illetve a 3 és 5 éves fiúk kimonóban a templomokba mennek, és jó egészségért imádkoznak.
+                A páratlan számokat keleten szerencsés számoknak tartják.</td>
+        </tr>
+        <tr class="allamiUnnep">
+            <td><b>Császári születésnap</b><br>Tennou tanjoubi</td>
+            <td>December 23.</td>
+            <td>Az aktuális császár, Akihito születésnapja (1933).</td>
+        </tr>
+        <tr class="csaladiUnnep">
+            <td><b>Karácsony</b></td>
+            <td>December 24.</td>
+            <td>Nem meghitt családi ünnep. Japánban ez az este a randizásról szól, ami természetesen egy KFC menü nélkül elképzelhetetlen.
+                Az 1974-es Karácsonyra Kentuckyt! elnevezésű kampány örökre összeolvasztotta a japánok fejében karácsonyt
+                a sült csirke fogyasztással.</td>
+        </tr>
+        <tr class="kulturUnnep">
+            <td><b>Szilveszter</b><br>Omisoka</td>
+            <td>December 31.</td>
+            <td>Mindenki nagytakarítást végez otthon, hogy az újévet tisztán köszöntsék. Buddhista templomba mennek, ahol 108-szor
+                kondul meg a harang (az emberiséget gyötrő 108 vágy jelképére). A 108. harangszó már az Új Évben hangzik
+                el.
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br>
+</div>
+
+
+    <script>
+        function allamiE() {
+            var allami = document.getElementById("allami");
+            var csaladi = document.getElementById("csaladi");
+            var kultur = document.getElementById("kultur");
+            var vallasi = document.getElementById("vallasi");
+
+
+            var allamiUnnep = document.getElementsByClassName("allamiUnnep");
+            var csaladiUnnep = document.getElementsByClassName("csaladiUnnep");
+            var kulturUnnep = document.getElementsByClassName("kulturUnnep");
+            var vallasiUnnep = document.getElementsByClassName("vallasiUnnep");
+
+            var helyi = document.getElementById("helyi");
+            var helyiUnnep = document.getElementsByClassName("helyiUnnep");
+
+            for (var i = 0; i < allamiUnnep.length; i++) {
+                if (allami.checked) {
+                    allamiUnnep[i].style = "color: #ee0000; border: 1px solid #888;";
+                } else {
+                    allamiUnnep[i].style = "none";
+                }
+            }
+
+            for (var i = 0; i < csaladiUnnep.length; i++) {
+                if (csaladi.checked) {
+                    csaladiUnnep[i].style = "color: #fe4707; border: 1px solid #888";
+                } else {
+                    csaladiUnnep[i].style = "none";
+                }
+            }
+
+            for (var i = 0; i < kulturUnnep.length; i++) {
+                if (kultur.checked) {
+                    kulturUnnep[i].style = "color: #3f07e1; border: 1px solid #888";
+                } else {
+                    kulturUnnep[i].style = "none";
+                }
+            }
+            for (var i = 0; i < vallasiUnnep.length; i++) {
+                if (vallasi.checked) {
+                    vallasiUnnep[i].style = "color: #05a601; border: 1px solid #888";
+                } else {
+                    vallasiUnnep[i].style = "none";
+                }
+            }
+        }
+        function helyiE() {
+            var helyi = document.getElementById("helyi");
+            var helyiUnnep = document.getElementsByClassName("helyiUnnep");
+
+            for (var i = 0; i < helyiUnnep.length; i++) {
+                if (helyi.checked) {
+                    helyiUnnep[i].style = "color: #f803aa; border: 3px solid #888;";
+                } else {
+                    helyiUnnep[i].style = "none";
+                    
+                }
+            }
+        }
+        function goldenE() {
+            var golden = document.getElementById("golden");
+            var goldenUnnep = document.getElementsByClassName("goldenUnnep");
+
+            for (var i = 0; i < goldenUnnep.length; i++) {
+                if (golden.checked) {
+                    goldenUnnep[i].style = "color: #fea00b; border: 3px dashed #888;";
+                } else {
+                    goldenUnnep[i].style = "none";
+                    
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

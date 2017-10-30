@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Árkalkulátor</title>
+	<meta charset="utf-8">
+	    <link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="kalk/kalk.css">
+	    <style>
+		body{font-family: "Open Sans", sans-serif }
+		</style>
+
+</head>
+<body>
+	<nav>
+    <a href="index.html"><img class="japanicon" src="img/japanicon.png"></a>
+    <div class="nav-title">Utazás? Japán!</div>
+
+    <ul class="menu" align="right">
+        <a href="index.html"><li>Kezdőlap</li></a>
+        <a href="kalkulator.html"><li class="nav-active">Árkalkulátor</li></a>
+        <a href="unnepek.html"><li>Ünnepek</li></a>
+        <a href="anime.html"><li>Anime</li></a>
+        <a href="kapcsolat.html"><li>Kapcsolat</li></a>  
+    </ul>
+</nav>
+<br><br><br><br><br><br>
+ <div class="container">
+	<center><h1 style="font-size: 60px; color:#ee0000">Árkalkulátor</h1></center>
+
+	<p>Kedvess látogató ezen a felületen egy árkalkulárt találsz aminek segítségével felmérheted egy japánpa való kirándulás hozzávetőleges költségeit.</p>
+
+	<h2 id="bekezdes">Utazási költség</h2>
+	
+	<p>Japánba magyarországról repülőgéppel juthatsz el. A repülési költségen a legjobban a korai tervezéssel tudsz spórolni</p>
+	
+	<form id="form1">
+		
+		<select id="selair">
+			<option value="air1">Most akarok utazni</option>
+			<option value="air2">1 hónap múlva szeretnék utazni</option>
+			<option value="air3">2 hónap múlva szeretnék utazni</option>
+			<option value="air4">3 hónap múlva szeretnék utazni</option>
+		</select>
+		<br>
+		<button style="font-size: 15px" type="button" onclick="air();">Mutasd</button>
+		
+		<p>Közelítő ár: <span id="airspan"></span></p>
+
+	</form>
+
+	<h2 id="h2.1">Szállás</h2>
+
+	<form id="form2">
+		<label for="selhotel" name="selhotel">Milyen tipusú szállást keres?</label>
+		<br>
+		<select id="selhotel">
+			
+			<option value="hotel2">Panziók, 3 csillagosnál kisebb szállodák </option>
+			<option value="hotel3">3 Csillagos szálloda</option>
+			<option value="hotel4">4 Csillagos szálloda</option>
+			<option value="hotel5">5 Csillagos szálloda</option>
+		</select>
+
+		<br>
+		
+		<label for="selroom" name="selroom">Hány ágyas szobát keres?</label>
+		<br>
+		<select id="selbed" name="selroom">
+			<option value="bed1">1 ágyas szoba</option>
+			<option value="bed2">2 ágyas szoba</option>
+			<option value="bed3">3 ágyas szoba</option>
+		</select>
+
+		
+		<br>
+		<label for="reggeli">Reggelit a szálláson fogyasztaná?</label>
+		<input type="checkbox" name="reggeli" id="reggeli">
+		
+		<br>
+		<label for="night">Hány Éjszakát marad?</label>
+		<input type="number" name="night" id="night">
+
+		<br>
+		<button style="font-size: 15px" type="button" onclick="hotel();">Mutasd</button>
+		
+		<p>Közelítő ár: <span id="airhotel"></span></p>
+
+	</form>
+
+	<h2 id="h2.2"> Helyi Közlekedés</h2>
+
+	<p>Az utazásod időtartamára a turista jegyet ajánljuk melynek teljes kötsége <span id="trafic">70000</span> Ft. Ez korlátlan vonat és metró használatra jogsít fel.</p>
+	<br>
+	<label id="trafic">Hány darab jegyet szeretne: <input type="number" id="trafic2" name="trafic2" > db</label>
+	<br>
+	<button style="font-size: 15px" type="button" onclick="trafic();">Mutasd</button>
+	
+
+	<p>Közelítő ár: <span id="trafic1"></span></p>
+
+	<h2 id="h2.3">Étkezés</h2>
+
+	<form id="form3">
+		
+		<label for="food1">Gyorsétterrem:
+			<input type="number" name="food1" id="food1"> Tervezett étkezések száma (Egy étkezés költsége &asymp; 2000 Ft/fő) </label>
+			<br>
+		<label for="food2">Étterem:
+			<input type="number" name="food2" id="food2"> Tervezett étkezések száma (Egy étkezés költsége &asymp; 3500 Ft/fő) </label>
+			<br>
+		<label for="food3">Gourmet Étterem:
+			<input type="number" name="food3" id="food3"> Tervezett étkezések száma (Egy étkezés költsége &asymp; 10000Ft/fő) </label>
+			<br>
+
+
+		<button style="font-size: 15px" type="button" onclick="food();">Mutasd</button>
+		
+		<p>Közelítő ár: <span id="food"></span></p>
+
+	</form>
+
+<h2>Összes Költség:</h2>
+
+
+<button style="font-size: 20px" type="button" onclick="summa();">Összesen</button>
+
+<p>Az eddigi potenciálisan elköltött pénzed: <span id="sum"></span></p>
+<br><br>
+ </div>
+<script type="text/javascript" src="kalk/kalk.js">
+	
+</script>
+
+</body>
+</html>

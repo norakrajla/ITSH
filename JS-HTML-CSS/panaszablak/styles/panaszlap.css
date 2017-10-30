@@ -1,0 +1,272 @@
+@media screen{
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }  
+  #header{
+      height: 210px;
+      background: #eee;
+      padding: 0 6%;
+  }
+  .menu ul{
+      display: inline-block;
+  }
+  .menu li{
+      display: inline-block;
+      padding: 12px 40px;
+      font-size: 20px;
+      color: #efefef;
+      font-weight: 500;
+  }
+  nav{
+      background: #323232;
+      position: fixed;
+      top: 0;
+      width: 100%;  
+      margin-left:-8px;
+  }
+  .fejlec{
+    width: 100%;
+    margin-top: 60px;
+  }
+  li.nav-active{
+      color: #008cff;
+  }
+  #input{
+    background: #daecf3;
+    background: #eee;
+    padding: 22px 12px;
+    width: 42%;
+  }
+  #footer{
+    background: #323232;
+    color: #aaa;
+    margin-top:50px;
+  }
+  .footerOszlop{
+    width: 33%;
+    display: inline-block;
+    padding: 40px 0;
+    font-size: 10pt;
+    line-height: 1.8em;
+    float: left;
+  }
+  .footerAlcim{
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  .hangoskonyv{
+    font-size: 12pt;
+  }
+  #input{
+  margin: 4% 2% 4% 6%;
+  float: left;
+  }
+  #output{
+  margin: 4% 6% 4% 2%;
+  float: right;
+  width: 42%;
+  
+  }
+  #personalOutput, #complainOutput{
+    margin-bottom: 30px
+  }
+  #personalOutput{
+    background: #bae7f8;
+    border: 2px solid #6eacd3;
+    padding: 21px 10px 20px 20px;
+  }
+  #complainOutput{
+    /*background: green;*/
+  }
+  .telepulesTipus ul{
+  display: inline-block;
+  }
+  .telepulesTipus ul:nth-child(2){
+  margin-left: 30px;
+  }
+  li{
+    list-style-type: none;
+  }
+  .telepulesTipus{
+    padding: 10px 0;
+  }
+  .tav{
+    height: 30px;
+  }
+  .form-control {
+    margin: 10px 0;
+  }
+  form label{
+    margin-bottom: -5px;
+    margin-top:7px;
+  }
+   form .radio label{
+    margin-top:0;
+  }
+  [name="ingatlanTipus"], [name="panasz"], [name="panaszTipus"], [name="szomszedPozicio"]{
+    padding: 6px;
+    border-radius: 4px;
+    margin: 8px 20px 8px 0;
+  }
+  .panaszTorles{
+    background: red;
+  }
+  .elrejt{
+    display: none;
+  }
+  .tipikus{
+    padding: 12px 0;
+  }
+  .tipikus img{
+    width: 110px;
+    padding-left: 22px;
+  }
+
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    padding-left: 10px;
+  }
+  .personalFixed{
+    padding: 6px 0;
+    font-weight: bold;
+  }
+  .masodikBlokk{
+    padding-top: 90px;
+  }
+  #koltsegSzamlalo{
+  background: #ee0000;
+  border-radius:6px;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 340px;
+  height: 70px;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  font-size: 12pt;
+  }
+  .panaszEgyseg {
+    background: #f5dbdb;
+    border: 2px solid #e6bfbf;
+    padding: 21px 10px 20px 20px;
+    margin-bottom: 16px;
+  }
+  .panaszKep{
+    width: 400px;
+  }
+  .panaszFelirat{
+    font-weight: bold;
+    padding: 8px 0;
+  }
+  .signature {
+  display: none;
+}
+
+
+  /*********************   FŐOLDAL  **********************/
+  .kategoria{
+    background: #daecf3;
+    width: 30%;
+    min-height: 100px;
+    float: left;
+    margin: 20px 3% 30px 0;
+    padding: 20px 12px 20px 0;
+    font-size: 10pt;
+    font-weight: bolder;
+  }
+  .kategoria ul li{
+    padding-bottom: 12px;
+    margin-left: -20px;
+  }
+  .hirek{
+    width: 64%;
+    min-height: 100px;
+    float: right;
+    margin: 20px 0 30px 2%;
+    
+  }
+  .kategoriaAlcim{
+    font-weight: bolder;
+    margin-bottom: 17px;
+  }
+  .hir h3{
+    margin: 30px 0 16px 0;
+  }
+  .hir{
+    display: block;
+    margin-bottom: 30px;
+    min-height: 180px;
+  }
+  .hirKepe{
+    width: 30%;
+    float: left;
+  }
+  .hirSzovege{
+    width: 68%;
+    float: right;
+    padding-right: 6px;
+    text-align: justify; 
+  }
+
+
+  /*********************   ElÉRHETŐSÉG OLDAL  **********************/
+  .orarend td{
+    padding: 5px 30px 5px 10px;
+    font-weight: bolder;
+  }
+  .nyitva table tr:nth-child(odd){
+    background: #ddd;
+  }
+  .elerhetoseg td{
+    padding: 5px 30px 5px 10px;
+    font-weight: bolder;
+  }
+
+}
+
+
+/*********************   PRINT  **********************/
+
+@media print{
+  .lapdobas{
+    page-break-before: always;
+  }
+  #input, #footer, nav, .eszement{
+    display: none;
+  }
+  input[type="button"], .btn{
+      display: none;
+  }
+  #output{
+    display: block;
+  }
+  /***    Máté  ****/
+  #fullNameOutput, #addressOutput, #hrszOutput, #phoneNumberOutput, #telepulesTipusOutput, #ingatlanTipusOutput, .szomszedPozicioOutput, .panaszTipusOutput, .panaszSzovegOutput {
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 4px;
+  font-size: 13pt;
+  color: #008cff;
+}
+img {
+	/*filter: grayscale(100%);*/
+  padding-bottom: 10px;
+}
+.panaszKepOutput{
+  max-width: 150px;
+}
+.personalFixed {
+  margin: 8px;
+}
+#hide {
+  display: none;
+}
+.signature {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+}

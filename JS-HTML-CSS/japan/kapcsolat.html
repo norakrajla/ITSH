@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+    <meta charset="utf-8">
+    <title>Kapcsolat</title>
+  <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+               background: url("img/hegy.png") no-repeat fixed bottom right;  
+        }
+        
+    </style>
+    </head>
+     <body>
+<nav>
+    <a href="index.html"><img class="japanicon" src="img/japanicon.png"></a>
+    <div class="nav-title">Utazás? Japán!</div>
+
+    <ul class="menu" align="right">
+        <a href="index.html"><li>Kezdőlap</li></a>
+        <a href="kalkulator.html"><li>Árkalkulátor</li></a>
+        <a href="unnepek.html"><li>Ünnepek</li></a>
+        <a href="anime.html"><li>Anime</li></a>
+        <a href="kapcsolat.html"><li class="nav-active">Kapcsolat</li></a>  
+    </ul>
+</nav>
+    <br><br><br><br>
+        <div class="container">
+        <h1>Kapcsolat</h1>
+    <form >
+        <p>Név:</p>
+        <label for="userFirstName">Keresztnév:</label>
+        <input type="text" id="userFirstName" name="userFirstName">
+        <br><br>
+        <label for="userLastName">Vezetéknév:</label>
+        <input type="text" id="userLastName" name="userlastName">
+        <br><br>
+        <label for="userAge">Kor:</label>
+        <select id="userAge" name="userAge">
+            <option value="0-20">0-20</option>
+            <option value="20-40">20-40</option>
+            <option value="40-60">40-60</option>
+            <option value="60+">60+</option>
+        </select> 
+        <br><br>
+        <label>Neme:</label>
+        <br>
+        <input type="radio" name="gender" id="gender_male">
+        <label for="gender_male">Férfi</label>
+        <br>
+        <input type="radio" name="gender" id="gender_female">
+        <label for="gender_female">Nő</label>
+        <br>
+        <input type="radio" name="gender" id="gender_NA">
+        <label for="gender_NA">Nem nyilatkozom</label>
+        <br><br>
+        <label for="newsLetter">Kérek hírlevelet</label>
+        <input type="checkbox" id="newsLetter" checked>
+        <br><br>
+        <label for="userEmail">Email-cím:</label>
+        <input type="email" name="userEmail" id="userEmail" >
+        <br><br>
+        <p>Kérlek az alábbi értékels kitöltésével, segítsd oldalunk további fejlesztését!</p>
+        <table>
+            <thead>
+                <tr>
+                         <th></th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Érdekes</b></td>
+                    <td><input type="radio" name="erdekes"></td>
+                    <td><input type="radio" name="erdekes"></td>
+                    <td><input type="radio" name="erdekes" checked></td>
+                    <td><input type="radio" name="erdekes"></td>
+                    <td><input type="radio" name="erdekes" ></td>
+                </tr>
+                 <tr>
+                    <td><b>Hasznos</b></td>
+                    <td><input type="radio" name="hasznos"></td>
+                    <td><input type="radio" name="hasznos"></td>
+                    <td><input type="radio" name="hasznos" checked></td>
+                    <td><input type="radio" name="hasznos"></td>
+                    <td><input type="radio" name="hasznos" ></td>
+                </tr>
+            </tbody>
+        </table>
+          <br><br>
+        <button type="button"  onclick="confirm();">Küldés</button>
+        <input type="reset" value="Töröl">    
+    </form>
+<p id="valasz22"></p>
+<!--<button type="button" onclick="alertt();">alert!</button>-->
+<h3>Elérhetőségünk</h3>
+<h4>Címünk :</h4>
+ <p> South Buda Business Park A<br>
+1117 Budapest, Budafoki út 56. 3. emelet <p>
+ <h4>Email:</h4>   
+ <p><a href="mailto:betonteve@sivatagi.com" target="_blank">betonteve@sivatagi.com</a></p>
+  </div>
+
+ <iframe style="margin-top: 100px" width="100%"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBrB8LI_lqfa3wZcx7R01imhU3DXEaIcSI&q=Budapest,+Budafoki+út+56,+1117"></iframe>
+    <script type="text/javascript">
+    function confirm(){
+       var email = document.getElementById('userEmail').value;
+       var x = document.getElementById("newsLetter").checked;
+       var userneve = document.getElementById('userLastName').value +" "+ document.getElementById('userFirstName').value;
+       var valasz = "";
+       var hirlevel="";
+      if( x == true){
+           valasz = "Kedves "+userneve+" köszönjük a visszajelzést! A(z) " + email + " címre küldjük a hírlevelet!";
+        }
+      else{
+            valasz = "Kedves "+userneve+" köszönjük a visszajelzést!";
+        }
+       
+
+       document.getElementById("valasz22").innerText = valasz;
+    }
+    </script>
+    
+    </body>
+</html>

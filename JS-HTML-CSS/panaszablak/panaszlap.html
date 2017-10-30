@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>Szomszéd bepanaszoló formanyomtatvány</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/panaszlap.css">
+    </head>
+    <body>
+       <nav>  
+            <ul class="menu" align="right">
+                <a href="index.html"><li>Kezdőlap</li></a>
+                <a href="panaszlap.html"><li class="nav-active">Panaszok benyújtása</li></a>
+                <a href="segely.html"><li>Segély igénylése</li></a>
+                <a href="elerhetoseg.html"><li>Elérhetőség</li></a>  
+            </ul>  
+       </nav>
+        <img src="img/fejlec.jpg" class="fejlec">
+        
+        <div id="main" class="container-fluid">
+            <div class="tav"></div>
+            <div class="osszes">
+            <div id="input" >
+
+                
+                <div id="personal" onchange="outputPersonalData()">
+
+                    <h2>Személyes adatok</h2>
+                   <div class="">
+                    <form>
+                        <div class="form-group">
+                    
+                            <div>
+                                <label for="fullName">Teljes név:*</label>
+                                <input type="text" class="form-control" placeholder="Teljes Név" id="fullName">
+                                <label for="personalAddress">Lakcím:*</label>
+                                <input type="text" class="form-control" placeholder="Lakcím" id="personalAddress">
+                                <label for="hrsz">Lakhely helyrajzi száma:*</label>
+                                <input type="text" class="form-control" placeholder="Helyrajzi szám" id="hrsz">
+                                <label for="phoneNumber">Telefonszám:*</label>
+                                <input type="text" class="form-control" placeholder="Telefonszám" id="phoneNumber">
+                                
+                            </div>
+                            <label><b>Lakóhely település típusa:*</b></label><br>
+                            <div class="telepulesTipus radio" id="telepulesTipus" onchange="changePropertyType()">
+                                
+                                <ul>
+                                    <li style='display: none'><input type="radio" name="telepulesTipus" value ="" id="radioSemmi" checked><label for="radioSemmi"></label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Budapest" id="radioBP"><label for="radioBP">Budapest</label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Nagyváros" id="radioNV"><label for="radioNV">Nagyváros</label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Kisváros" id="radioKIV"><label for="radioKIV">Kisváros</label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Község" id="radioKO"><label for="radioKO">Község</label></li>
+                                </ul>
+                                <ul> 
+                                    <li><input type="radio" name="telepulesTipus" value ="Kisfalu" id="radioKF"><label for="radioKF">Kisfalu</label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Aprófalu" id="radioAF"><label for="radioAF">Aprófalu</label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Törpefalu" id="radioTF"><label for="radioTF">Törpefalu</label></li>
+                                    <li><input type="radio" name="telepulesTipus" value ="Tanyavilág" id="radioTV"><label for="radioTV">Tanyavilág</label></li>
+                                </ul>
+                            </div>
+                            <div>                                
+                                <label for="ingatlanTipus">Lakóingatlan típusa:*</label><br>
+                                <select name="ingatlanTipus" id="ingatlanTipus">
+                                    <option id="PT0" value="">Válassz</option>
+                                    <option id="PT1" value="tanya">Tanya</option>
+                                    <option id="PT2" value="családi ház">Családi ház</option>
+                                    <option id="PT3" value="sorház">Sorház</option>
+                                    <option id="PT4" value="társasházi lakás">Társasházi lakás</option>
+                                    <option id="PT5" value="panel lakás">Panel lakás</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+            
+        </div>
+                </div>
+                <div id="complains">
+                    <h2>Panaszok</h2>
+                    <div id="inputComplainBlock" onchange="outputComplainData()">
+                    
+                    </div>
+                    <div>
+                        <button onclick="addNewComplain()" class="btn btn-success btn-lg btn-block">Új panasz hozzáadása</button>
+                        <div id="datacheck"></div>
+                    </div>
+                </div>
+            </div>  <!-- input vége-->
+
+
+            <div id="output">
+
+                 <div id="personalOutput">
+                     <h2>Személyes adatok</h2>
+
+                    <div id="complainBlockOutput">
+                        <div class="personalFixed">Neve: </div>
+                        <div><span id="fullNameOutput"></span></div>
+                        <div class="personalFixed">Címe: </div>
+                        <div><span id="addressOutput"></span></div>
+                        <div class="personalFixed">Helyrajzi száma: </div>
+                        <div><span id="hrszOutput"></span></div>
+                        <div class="personalFixed">Telefoszáma: </div>
+                        <div><span id="phoneNumberOutput"></span></div>
+                        
+                    </div>
+                    <div>
+                        <div class="personalFixed masodikBlokk">Településének típusa: </div>
+                        <div><span id="telepulesTipusOutput"></span></div>
+                        <div class="personalFixed masodikBlokk">Ingatlanjának típusa: </div>
+                        <div><span id="ingatlanTipusOutput"></span></div>
+                    </div>
+                </div>
+                <div id="complainOutput">
+                  
+                 </div>
+                 <div>
+                     <div class="signature">
+                    Aláírás:
+
+                    .......................
+                </div>
+                <div class="signature">
+                    Kelt.:
+
+                    ...........................
+                </div>
+                </div>    
+                    <div>
+                        <button onclick="finishComplaints()" class="btn btn-primary btn-lg btn-block">Panaszkodás befejezése</button>
+                    </div>
+               
+            </div>
+            <div class="eszement container">
+                     <button onclick="showEszement()" class="btn btn-warning btn-lg btn-block ">Eszement Gomb</button><br>
+                     <pre id="jsonPersonal" class="elrejt">
+                        
+                     </pre>
+                     <pre id="jsonComplain" class="elrejt">
+                        
+                     </pre>
+            </div>
+        </div>
+        
+        <div id="koltsegSzamlalo" class ="elrejt"></div>
+        </div>
+            <div id="footer">
+                <div class="container">
+                    <div class="footerOszlop">
+                        <div class="footerAlcim">MINISZTÉRIUMOK</div>
+                        <div>Belügyminisztérium</div>
+                        <div>Emberi Erőforrások Minisztériuma</div>
+                        <div>Földművelésügyi Minisztérium</div>
+                        <div>Honvédelmi Minisztérium</div>
+                        <div>Igazságügyi Minisztérium</div>
+                        <div>Külgazdasági és Külügyminisztérium</div>
+                        <div>Miniszterelnöki Kabinetiroda</div>
+                        <div>Miniszterelnökség</div>
+                        <div>Nemzetgazdasági Minisztérium</div>
+                        <div>Nemzeti Fejlesztési Minisztérium</div>
+                    </div>
+                    <div class="footerOszlop">
+                        <div class="footerAlcim">KORMÁNYZAT</div>
+                        <div>A miniszterelnök</div>
+                        <div>A kormány tagjai</div>
+                        <div>A kormányszóvivőm</div>
+                        <div>Külképviseletek</div>
+                    </div>
+                    <div class="footerOszlop footerAlcim hangoskonyv">
+                        Magyarország erősödik hangoskönyv<br>
+                        LETÖLTHETŐ!
+                    </div>
+
+                </div>
+            </div>    
+
+    <script src="scripts/panaszlap.js"></script>    
+    </body>
+</HTML>

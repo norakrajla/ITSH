@@ -1,0 +1,6 @@
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\StudentClassTests\StudentClassTests\bin\Debug\StudentClassTests.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\StudentClassTests\StudentClassTests\bin\Debug\StudentClassTests.pdb
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\StudentClassTests\StudentClassTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\StudentClassTests\StudentClassTests\obj\Debug\StudentClassTests.csprojResolveAssemblyReference.cache
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\StudentClassTests\StudentClassTests\obj\Debug\StudentClassTests.dll
+C:\Users\Nora\Desktop\GITLAB NET\yellowroad-csharp-01\StudentClassTests\StudentClassTests\obj\Debug\StudentClassTests.pdb
